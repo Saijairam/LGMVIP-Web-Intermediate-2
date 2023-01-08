@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+       <div class="top-container">
+           <div class="input-value">
+            <input type="text" class="input-field" id="result" name="result">
+           </div>
+           <div class="clear-btn-container">
+            <button class="value-btn clear-btn" onclick="result.value=''">C</button>
+           </div>
+       </div>
+       <div class="bottom-container">
+            <div class="sub-part part-1">
+                <div><button class="value-btn" onclick="displayValue(1)">1</button></div>
+                <div><button class="value-btn" onclick="displayValue(2)">2</button></div>
+                <div><button class="value-btn" onclick="displayValue(3)">3</button></div>
+                <div><button class="value-btn" onclick="displayValue('/')">/</button></div>
+            </div>
+            <div class="sub-part part-2">
+                <div><button class="value-btn" onclick="displayValue(4)">4</button></div>
+                <div><button class="value-btn" onclick="displayValue(5)">5</button></div>
+                <div><button class="value-btn" onclick="displayValue(6)">6</button></div>
+                <div><button class="value-btn" onclick="displayValue('-')">-</button></div>
+            </div>
+            <div class="sub-part part-3">
+                <div><button class="value-btn" onclick="displayValue(7)">7</button></div>
+                <div><button class="value-btn" onclick="displayValue(8)">8</button></div>
+                <div><button class="value-btn" onclick="displayValue(9)">9</button></div>
+                <div><button class="value-btn" onclick="displayValue('+')">+</button></div>
+            </div>
+            <div class="sub-part part-1">
+                <div><button class="value-btn" onclick="displayValue('.')">.</button></div>
+                <div><button class="value-btn" onclick="displayValue(0)">0</button></div>
+                <div><button class="value-btn equal-btn" onclick="calculate(result.value)">=</button></div>
+                <div><button class="value-btn" onclick="displayValue('*')">*</button></div>
+            </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
